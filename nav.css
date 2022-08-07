@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-links a {
-	color: rgb(255, 255, 255);
+	color:  rgb(77, 164, 240);
 	display: flex;
 	justify-content: center;
 	font-size: xx-large;
@@ -97,5 +97,5 @@ nav {
 
 .fab{
 	padding: 10px;
-	color: aliceblue;
+	color: rgb(77, 164, 240);
 }
