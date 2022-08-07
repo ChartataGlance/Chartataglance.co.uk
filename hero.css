@@ -153,9 +153,10 @@
 	font-size: 39px;
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 768px) {
 	.infocontent h1 {
-		font-size: 100px;
+		font-size: 82px;
 		margin-top: -15px;
 	}
 
@@ -183,3 +184,4 @@
 
 	}
 }
+
