@@ -15,7 +15,7 @@
 body {
 	min-width: 384px;
 	min-height: 384px;
-	background: linear-gradient(to right top, rgb(13, 13, 44), #257de2);
+	background: linear-gradient(to right top, rgba(13, 13, 44,1), #259ae2);
 }
 
 .fcontainer {
@@ -23,6 +23,8 @@ body {
 	background-image: url(./footlogo.svg);
 	background-position: center;
 	background-repeat: no-repeat;
+	margin-bottom: 0;
+	
 }
 
 .card {
@@ -85,17 +87,29 @@ body {
 .infolinks li {
 	display: inline-flex;
 	align-items: center;
-	padding: 10px;
+	
 }
 .infolinks a{
-	color: rgb(26, 128, 216);
+	display: flex;
+	color: #00acee;
+	background: rgba(25, 118, 185,0.2);
+	height: 24px;
+	width: 50px;
+	margin: 5px 5px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 6px 6px 10px -1px rgba(26, 1, 1, 0),
+		-6px -6px 10px -1px rgba(255, 255, 255, 0);
+	cursor: pointer;
+	transition: transform 0.5s;
 }
 
 .infolinks li img {
-	width: 24px;
-	background-color: rgb(28, 131, 222);
-	border-radius: 50%;
-	margin-right: 5px;
+	width: 20px;
+	background-color: rgb(126, 177, 222);
+	border-radius: 50px;
+	
 }
 
 .social-icon {

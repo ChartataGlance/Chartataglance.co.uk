@@ -115,6 +115,44 @@
 	flex-direction: column;
 }
 
+
+.cfd-link {
+	display: flex;
+	
+	
+	
+	
+}
+.cfd-link a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(25, 118, 185,0.2);
+	color: aqua;
+	height: 45px;
+	width: 75px;
+	margin-top: 50px;
+	margin-left: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 400;
+	box-shadow: 6px 6px 10px -1px rgba(26, 1, 1, 0.2),
+		-6px -6px 10px -1px rgba(255, 255, 255, 0.02);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+.cfd-link a:hover {
+	box-shadow: inset 4px 4px 6px -1px rgba(2, 1, 1, 0.2),
+		         inset -2px -2px 2px -1px rgba(255, 255, 255, 1),
+		               -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+		                0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 
+		                0px 12px 10px -10px rgba(0, 0, 0, 0.0);
+	border: 1px solid rgba(0, 0, 0, 0.01);
+	transform: translateY(2px);
+	font-size: 39px;
+}
+
 @media (min-width: 1024px) {
 	.infocontent h1 {
 		font-size: 100px;
@@ -124,6 +162,8 @@
 	.infocontent h2{
 		font-size: 40px;
 		line-height: 0;
+		margin-bottom: -50px;
+		margin-left: -30px;
 	}
 	.infocontent p{
 		font-size: 40px;
@@ -132,5 +172,14 @@
 	.clock {
 		font-size: x-large;
 		opacity: 0.5;
+	}
+
+	.cfd-link a{
+		font-size: xx-large;
+		height: 80px;
+		width: 150px;
+		margin-top: 100px;
+		margin-right: 25px;
+
 	}
 }
