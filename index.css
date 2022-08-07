@@ -73,7 +73,7 @@ body {
 .info h1 {
 	font-size: xx-large;
 	font-weight: 700;
-	color: rgb(60, 150, 230);
+	color: rgba(72, 99, 189,0.6);
 }
 
 .infolinks ul {
@@ -163,10 +163,10 @@ a:hover .fa-telegram {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: aliceblue;
+	color: rgb(25, 126, 215);
 }
 .foot a{
-	color: rgb(162, 192, 219);
+	color: rgb(24, 120, 203);
 }
 
 .fcontainer {
@@ -184,5 +184,9 @@ a:hover .fa-telegram {
 	h2 {
 		font-size: xx-large;
 		padding: 50px;
+	}
+	.info h1{
+		font-size: 50px;
+		color: rgba(72, 99, 189,0.4);
 	}
 }
