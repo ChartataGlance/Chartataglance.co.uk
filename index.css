@@ -176,8 +176,9 @@ body {
 	transition: transform 0.5s;
 }
 
-a i {
-	font-size: 30px;
+
+a i{
+	font-size: 20px;
 }
 
 a:hover {
