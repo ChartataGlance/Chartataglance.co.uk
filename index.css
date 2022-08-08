@@ -6,7 +6,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "lato", sans-serif;
+	font-family: "poppins", sans-serif;
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
@@ -35,12 +35,19 @@ body {
 }
 
 .containerimg {
-	width: 95%;
+	width: 96%;
 	margin: 0 auto;
 	border-radius: 20px;
 	margin-top: 30px;
 	
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 5px;
+}
+.containerimg h1{
+	
+	padding: 10px;
+	text-align: center;
+	color: #f9f9f9;
+	
 }
 
 .containerimg h2{
@@ -119,6 +126,35 @@ body {
 	background-color: rgb(126, 177, 222);
 	border-radius: 50px;
 	
+}
+
+.infolinks1 ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+.infolinks1 li {
+	display: inline-flex;
+	align-items: center;
+	
+}
+.infolinks1 a{
+	display: flex;
+	color: #00acee;
+	background: rgba(25, 118, 185,0.2);
+	height: 25px;
+	width: 75px;
+	margin: 5px 5px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 6px 6px 10px -1px rgba(26, 1, 1, 0),
+		-6px -6px 10px -1px rgba(255, 255, 255, 0);
+	cursor: pointer;
+	transition: transform 0.5s;
 }
 
 .social-icon {
