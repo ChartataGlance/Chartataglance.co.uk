@@ -177,11 +177,11 @@ body {
 }
 
 
-a i{
+.social-icon a > i{
 	font-size: 20px;
 }
 
-a:hover {
+.social-icon a:hover {
 	box-shadow: inset 4px 4px 6px -1px rgba(2, 1, 1, 0.2),
 		         inset -2px -2px 2px -1px rgba(255, 255, 255, 1),
 		               -0.5px -0.5px 0px rgba(255, 255, 255, 1),
