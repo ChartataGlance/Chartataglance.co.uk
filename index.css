@@ -30,8 +30,8 @@ body {
 .card {
 	display: flex;
 	flex-direction: column;
-	padding: 50px;
-	border-radius: 20px;
+	padding: 35px;
+	
 }
 
 .containerimg {
@@ -205,16 +205,9 @@ a:hover .fa-telegram {
 	color: #6e6ea165;
 }
 
-.foot {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: rgb(25, 126, 215);
-}
+
 .foot a{
 	color: rgb(24, 120, 203);
-	
-	
 }
 .foot p{
 	text-align: center;
