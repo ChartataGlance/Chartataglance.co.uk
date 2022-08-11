@@ -157,6 +157,35 @@ body {
 	transition: transform 0.5s;
 }
 
+.infolinks2 ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+.infolinks2 li {
+	display: inline-flex;
+	align-items: center;
+	
+}
+.infolinks2 a{
+	display: flex;
+	color: #00acee;
+	background: rgba(25, 118, 185,0.2);
+	height: 25px;
+	width: 120px;
+	margin: 5px 5px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 6px 6px 10px -1px rgba(26, 1, 1, 0),
+		-6px -6px 10px -1px rgba(255, 255, 255, 0);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
 .social-icon {
 	display: flex;
 	justify-content: center;
