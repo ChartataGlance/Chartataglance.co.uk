@@ -19,7 +19,7 @@ body {
 }
 
 .fcontainer {
-	background-color: rgb(249, 249, 249);
+	background-color:transparent;
 	background-image: url(./footlogo.svg);
 	background-position: center;
 	background-repeat: no-repeat;
