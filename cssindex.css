@@ -16,6 +16,7 @@ body {
 	min-width: 384px;
 	min-height: 384px;
 	background: linear-gradient(to right top, rgba(13, 13, 44,1), #259ae2);
+	min-height: 100vh;
 }
 
 .fcontainer {
@@ -240,10 +241,16 @@ a:hover .fa-telegram {
 }
 .foot p{
 	text-align: center;
+
 }
 
 .fcontainer {
+	position: absolute;
+bottom: 0px;
+left: 50%;
 	background-color: transparent;
+	margin-bottom: 0px;
+	transform: translate(-50%, -50%);
 }
 
 @media (min-width: 767px) {
