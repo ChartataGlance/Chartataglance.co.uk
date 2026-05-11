@@ -271,3 +271,201 @@ a:hover .fa-telegram {
 		color: rgba(72, 99, 189, 0.4);
 	}
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header / Nav */
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  min-height: 70px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h4 {
+  margin: 0;
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.infopage {
+  width: 100%;
+}
+
+.infocontent h1 {
+  font-size: clamp(2rem, 8vw, 5rem);
+  line-height: 1.1;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.infocontent p {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.clock {
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.fcontainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info h1 {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.infolinks1 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.infolinks2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.infolinks2 li {
+  margin: 10px 0;
+}
+
+.infolinks2 a,
+footer a {
+  word-break: break-word;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 16px;
+  }
+
+  nav ul {
+    gap: 14px;
+  }
+
+  .hero {
+    min-height: 70vh;
+    padding: 60px 16px;
+  }
+
+  .infocontent h1 {
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+  }
+
+  .infocontent p {
+    font-size: 1.05rem;
+  }
+
+  .infolinks1 {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  footer {
+    padding: 35px 16px;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+  nav {
+    min-height: 64px;
+  }
+
+  .logo h4 {
+    font-size: 1rem;
+  }
+
+  .topfab {
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    padding: 50px 14px;
+  }
+
+  .infocontent h1 {
+    font-size: 2.3rem;
+  }
+
+  .infocontent p {
+    font-size: 1rem;
+  }
+
+  .social-icon {
+    gap: 18px;
+  }
+}
