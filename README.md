@@ -1,38 +1,42 @@
-# ChartataGlance AI Website
+# ChartataGlance AI DAX Pattern Website
 
-Static GitHub-ready website for ChartataGlance.
+This package contains a static GitHub Pages website plus a Cloudflare Worker API for live R2 screenshot galleries.
 
-## Files
+## What is included
 
-- `index.html` — updated homepage
-- `ai-results.html` — separate AI prediction gallery page
-- `assets/style.css` — shared responsive design
-- `assets/main.js` — date/time script
-- `assets/gallery.js` — pattern gallery loader
-- `data/*.json` — separate Cloudflare image lists per pattern
-- `sitemap.xml` — SEO sitemap
-- `robots.txt` — search crawler config
+- `index.html` — updated SEO homepage
+- `ai-results.html` — AI DAX pattern results page
+- `assets/gallery.js` — loads live screenshots from Worker API
+- `cloudflare-worker/` — Worker that lists R2 objects by pattern folder
+- `python-auto-upload-example.py` — Python R2 upload helper for your DAX AI detector
+- `robots.txt` and `sitemap.xml`
 
-## How to add Cloudflare screenshots
+## Architecture
 
-Open the JSON file for the pattern, for example:
+```text
+DAX AI detection
+→ screenshot saved
+→ Python uploads image to Cloudflare R2
+→ Worker API lists R2 objects
+→ GitHub Pages gallery loads latest screenshots automatically
+→ Telegram alerts send chart screenshot
+```
 
-`data/123buy.json`
+## Important URLs
 
-Replace the sample image URL:
+- Website: `https://chartataglance.co.uk/`
+- Gallery page: `https://chartataglance.co.uk/ai-results.html`
+- R2 image domain: `https://charts.chartataglance.co.uk/`
+- Worker API recommended domain: `https://api.chartataglance.co.uk/`
 
-`https://imagedelivery.net/YOUR_CLOUDFLARE_ACCOUNT_HASH/REPLACE_IMAGE_ID/public`
+## Deploy website
 
-with your real Cloudflare image URL.
+Upload these files to your GitHub Pages repository and push.
 
-## Telegram CTA
+## Deploy Worker
 
-Current Telegram link used:
+See `cloudflare-worker/README-WORKER.md`.
 
-https://t.me/ChartataGlance
+## Note
 
-Change it in `index.html` and `ai-results.html` if needed.
-
-## GitHub hosting
-
-Upload all files to your GitHub Pages repository root.
+This is for AI-assisted market-structure research and educational use only. It is not financial advice.
