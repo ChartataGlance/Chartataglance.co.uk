@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ChartataGlance | Technical Analysis & Trading Algorithms</title>
+
+  <meta name="description" content="ChartataGlance provides technical analysis and trading algorithm insights based on pure data analysis. No news, no hype." />
+  <meta name="keywords" content="technical analysis, trading algorithm, automated trading, chart analysis, market analysis, trading signals" />
+  <meta name="author" content="ChartataGlance" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0D0D2C" />
+
+  <link rel="canonical" href="https://chartataglance.co.uk/" />
+  <link rel="icon" type="image/png" href="./picmy.jpeg" />
+
+  <meta property="og:site_name" content="ChartataGlance" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chartataglance.co.uk/" />
+  <meta property="og:title" content="ChartataGlance | Technical Analysis & Trading Algorithms" />
+  <meta property="og:description" content="Technical analysis and trading algorithm insights based on pure data analysis. No news, no hype." />
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/chartataglance.appspot.com/o/twitcard4ratio3.png?alt=media&token=7d210414-a3ec-4cdb-8c4f-a7890bb21755" />
+  <meta property="og:image:alt" content="ChartataGlance technical analysis and trading algorithm preview" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@chartataglance" />
+  <meta name="twitter:creator" content="@chartataglance" />
+  <meta name="twitter:title" content="ChartataGlance | Technical Analysis & Trading Algorithms" />
+  <meta name="twitter:description" content="Pure data-based technical analysis and trading algorithm insights. No news, no hype." />
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/chartataglance.appspot.com/o/twitcard4ratio3.png?alt=media&token=7d210414-a3ec-4cdb-8c4f-a7890bb21755" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d2c;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      width: 100%;
+      background: rgba(13, 13, 44, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 72px;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo h4 {
+      font-size: clamp(1.1rem, 4vw, 1.5rem);
+      letter-spacing: 0.5px;
+    }
+
+    .top-social {
+      display: flex;
+      gap: 18px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .top-social a {
+      font-size: 1.25rem;
+      transition: 0.3s ease;
+    }
+
+    .top-social a:hover {
+      color: #41d9ff;
+      transform: translateY(-2px);
+    }
+
+    .nav-links {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 16px;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.85;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: #41d9ff;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 90px 20px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top, rgba(65, 217, 255, 0.22), transparent 35%),
+        linear-gradient(180deg, #0d0d2c 0%, #050516 100%);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .clock-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .clock {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: clamp(0.85rem, 3vw, 1rem);
+    }
+
+    .infocontent h1 {
+      font-size: clamp(2.4rem, 8vw, 5.5rem);
+      line-height: 1.05;
+      margin-bottom: 24px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .infocontent p {
+      font-size: clamp(1.05rem, 4vw, 1.5rem);
+      line-height: 1.6;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto 34px;
+    }
+
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #41d9ff;
+      color: #050516;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .features {
+      padding: 80px 20px;
+      background: #050516;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      margin-bottom: 40px;
+    }
+
+    .feature-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .feature-card i {
+      font-size: 2rem;
+      color: #41d9ff;
+      margin-bottom: 18px;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    .feature-card p {
+      opacity: 0.82;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 60px 20px 28px;
+      text-align: center;
+      background: #0d0d2c;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-title {
+      font-size: clamp(1.5rem, 6vw, 2.4rem);
+      margin-bottom: 20px;
+    }
+
+    .social-icon {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin: 24px 0;
+    }
+
+    .social-icon a {
+      font-size: 1.6rem;
+      transition: 0.3s ease;
+    }
+
+    .social-icon a:hover {
+      color: #41d9ff;
+      transform: translateY(-2px);
+    }
+
+    .infolinks1 {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin: 35px 0;
+    }
+
+    .infolinks2 ul {
+      list-style: none;
+    }
+
+    .infolinks2 li {
+      margin: 10px 0;
+    }
+
+    .infolinks2 a {
+      opacity: 0.85;
+    }
+
+    .infolinks2 a:hover {
+      color: #41d9ff;
+      opacity: 1;
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      opacity: 0.75;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        padding: 0 16px;
+      }
+
+      .top-social {
+        gap: 14px;
+      }
+
+      .nav-links {
+        padding-bottom: 14px;
+        gap: 20px;
+      }
+
+      .hero {
+        min-height: 75vh;
+        padding: 70px 16px;
+      }
+
+      .infocontent h1 {
+        font-size: clamp(2.3rem, 11vw, 3.7rem);
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .infolinks1 {
+        flex-direction: column;
+        gap: 18px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      nav {
+        min-height: 64px;
+      }
+
+      .logo h4 {
+        font-size: 1rem;
+      }
+
+      .top-social a {
+        font-size: 1.1rem;
+      }
+
+      .hero {
+        padding: 60px 14px;
+      }
+
+      .cta-row {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ChartataGlance",
+    "url": "https://chartataglance.co.uk/",
+    "description": "Technical analysis and trading algorithm insights based on pure data analysis.",
+    "sameAs": [
+      "https://twitter.com/Chartataglance",
+      "https://t.me/ChartataGlance"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="./">
+          <h4>ChartataGlance</h4>
+        </a>
+      </div>
+
+      <ul class="top-social">
+        <li><a href="https://twitter.com/Chartataglance" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://t.me/ChartataGlance" aria-label="Telegram"><i class="fab fa-telegram"></i></a></li>
+        <li><a href="https://wa.me/447833322251" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+      </ul>
+    </nav>
+
+    <ul class="nav-links">
+      <li><a href="./">Home</a></li>
+      <li><a href="#features">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="clock-wrapper">
+          <div class="clock">
+            <span id="date"></span>
+          </div>
+          <div class="clock">
+            <span id="time"></span>
+          </div>
+        </div>
+
+        <div class="infocontent">
+          <h1>Technical Analysis & Trading Algorithm</h1>
+          <p>Pure Data Analysis. No News. No Hype.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://ChartataGlance.com">View Analysis</a>
+            <a class="btn btn-secondary" href="https://chartataglance.com">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2 class="section-title">Data-Driven Market Analysis</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Technical Analysis</h3>
+          <p>Market movement analysis using chart structure, price behaviour, and technical data.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fas fa-robot"></i>
+          <h3>Trading Algorithms</h3>
+          <p>Algorithm-focused trading insights designed around data rather than emotion or hype.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fas fa-database"></i>
+          <h3>Pure Data</h3>
+          <p>No news-based noise. No market hype. Just structured analysis at a glance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2 class="footer-title">ChartataGlance</h2>
+
+    <div class="social-icon">
+      <a href="https://twitter.com/Chartataglance" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/ChartataGlance" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+      <a href="https://wa.me/447833322251" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="infolinks1">
+      <div class="infolinks2">
+        <ul>
+          <li><a href="https://www.chartataglance.com/">Contraction</a></li>
+          <li><a href="https://www.chartataglance.com/">Expansion</a></li>
+        </ul>
+      </div>
+
+      <div class="infolinks2">
+        <ul>
+          <li><a href="https://www.chartataglance.com/">Correction</a></li>
+          <li><a href="https://chartataglance.com/?Chart=divergence">Divergence</a></li>
+          <li><a href="https://www.chartataglance.com/">MeanReverse</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copyright">
+      &copy; <a href="https://www.chartataglance.co.uk">ChartataGlance | All Rights Reserved</a>
+    </p>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+
+      document.getElementById("date").textContent = now.toLocaleDateString("en-GB", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+
+      document.getElementById("time").textContent = now.toLocaleTimeString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      });
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+</body>
+</html>

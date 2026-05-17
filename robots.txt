@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chartataglance.co.uk/sitemap.xml

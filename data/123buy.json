@@ -1,0 +1,9 @@
+[
+  {
+    "pattern": "123Buy",
+    "confidence": "0.88",
+    "date": "2026-05-17",
+    "description": "Bullish market-structure pattern detected from labelled DAX screenshots.",
+    "image": "https://imagedelivery.net/YOUR_CLOUDFLARE_ACCOUNT_HASH/REPLACE_IMAGE_ID/public"
+  }
+]
