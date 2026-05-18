@@ -48,28 +48,21 @@
   <header>
     <nav>
       <div class="logo"><a href="./"><h4>ChartataGlance</h4></a></div>
-      <ul class="top-social">
-        <li><a href="https://twitter.com/Chartataglance" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://t.me/ChartataGlance" aria-label="Telegram"><i class="fab fa-telegram"></i></a></li>
-        <li><a href="https://wa.me/447833322251" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
-      </ul>
     </nav>
     <ul class="nav-links">
       <li><a href="./">Home</a></li>
-      <li><a href="#contact">Telegram</a></li>
     </ul>
   </header>
 
   <main>
     <section class="hero compact-hero">
       <div class="container">
-        <div class="eyebrow">Cloudflare R2 + Worker Live Gallery</div>
+        <div class="eyebrow">Backtested Screencharts</div>
         <div class="infocontent">
-          <h1>DAX Pattern Recognition Using AI</h1>
-          <p>Computer vision scans DAX charts, detects trained market structures, saves screenshots to Cloudflare R2, and sends Telegram alerts.</p>
+          <h1>Pattern Recognition Using AI</h1>
+          <p>Computer vision scans charts, detects trained market structures</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://t.me/ChartataGlance" target="_blank" rel="noopener">Get Telegram Alerts</a>
-            <a class="btn btn-secondary" href="#gallery-section">View AI Results</a>
+            <a class="btn btn-secondary" href="#gallery-section">View Backtested Results</a>
           </div>
         </div>
       </div>
@@ -77,21 +70,14 @@
 
  
 
-    <section class="live-feed" id="latest">
-      <div class="container">
-        <h2 class="section-title">Latest Live AI Detections</h2>
-        <p class="section-intro">This section reads recent objects from Cloudflare R2 through the Worker API.</p>
-        <div id="latest-grid" class="gallery"></div>
-      </div>
-    </section>
+
 
     <section class="gallery-section" id="gallery-section">
       <div class="container">
-        <h2 class="section-title">Separate Pattern Galleries</h2>
-        <p class="section-intro">Choose a pattern to load its latest screenshots directly from the R2 bucket.</p>
+        <h2 class="section-title">Backtested </h2>
+        <p class="section-intro">Choose a pattern to load its backtested results.</p>
         <div id="pattern-nav" class="pattern-nav"></div>
-        <h3 id="gallery-title" class="gallery-title">123Buy AI Results</h3>
-        <p id="gallery-status" class="gallery-status">Loading...</p>
+        <!-- <h3 id="gallery-title" class="gallery-title">123Buy AI Results</h3> -->
         <div id="gallery" class="gallery"></div>
       </div>
     </section>
